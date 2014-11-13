@@ -1,0 +1,27 @@
+<!doctype>
+<html lang="en">
+<head>
+	<title>JavaScript Tutorial - Date Objects</title>
+</head>
+
+<body>
+
+	<!-- JAVASCRIPT -->
+	<script type="text/javascript">
+		
+		function getWinners()
+		{
+
+			var currentTime 			= new Date();
+			var hours 					= currentTime.getHours();
+			var minutes 				= currentTime.getMinutes();
+			var seconds 				= currentTime.getSeconds();
+
+			console.log('Seahawks Won! Are Champs now! : ' + hours + ':' + minutes + ':' + seconds);
+		}
+		setInterval("getWinners()", 1000);
+
+	</script>
+	<!-- END JAVASCRIPT -->
+</body>
+</html>

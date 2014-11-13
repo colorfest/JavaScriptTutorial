@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>JavaScript Tutorial - Arrays and Loops</title>
+	<link rel="stylesheet" href="css/foundation.min.css"></link>
+</head>
+
+<body>
+
+	<!-- JAVASCRIPT -->
+	<script type="text/javascript">
+
+	var ALEast 			= ["Yankees", "Red Sox", "Orioles", "Rays", "Blue Jays"];
+	ALEast.sort();
+
+	document.write('<table>');
+	document.write('<tr><th>Teams</th></tr>');
+
+	for(var i = 0; i < ALEast.length; i++)
+	{
+		document.write('<tr><td>' + ALEast[i] + '</td></tr>');
+	}
+
+	document.write('</table>');
+
+	</script>
+	<!-- END JAVASCRIPT -->
+</body>
+</html>

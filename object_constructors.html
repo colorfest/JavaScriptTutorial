@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>JavaScript Tutorial - Objects and Constructors</title>
+	<link rel="stylesheet" href="css/foundation.min.css"></link>
+</head>
+
+<body>
+
+	<!-- JAVASCRIPT -->
+	<script type="text/javascript">
+		function team(city, qb)
+		{
+			this.city				= city;
+			this.qb					= qb;
+		}
+
+		var Patriots 			= new team("New England", "Tom Brady");
+		var Ravens 				= new team("Baltimore", "Joe Flacco");
+		var Broncos				= new team("Denver", "Peyton Manning");
+		var Seahawks 			= new team("Seattle", "Russell Wilson");
+
+		document.write("Seahawks: City - " + Seahawks.city + " Quarterback - " + Seahawks.qb + "<br>");
+		document.write("Ravens: City - " + Ravens.city + " Quarterback - " + Ravens.qb + "<br>");
+		document.write("Broncos: City - " + Broncos.city + " Quarterback - " + Broncos.qb + "<br>");
+	</script>
+	<!-- END JAVASCRIPT -->
+</body>
+</html>

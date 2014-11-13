@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>JavaScript Tutorial - Form Validation</title>
+	<link rel="stylesheet" href="css/foundation.min.css"></link>
+</head>
+
+<body>
+
+	<form name="newForm">
+		<label>Username:</label> <input type="text" name="username">
+		<label>Password:</label> <input type="password" name="password">
+		<input type="button" value="Validate" id="submitBtn" class="button">
+	</form>
+
+
+	<!-- JAVASCRIPT -->
+	<script type="text/javascript">
+		var submitBtn 		= document.getElementById('submitBtn');
+		submitBtn.addEventListener("click", validateForm);
+
+		function validateForm()
+		{
+			var uname 			= document.newForm.username.value;
+			var pword 			= document.newForm.password.value;
+
+			if((uname == "") && (pword == ""))
+			{
+				alert('You need to fill out the form!!!!');
+			}
+			else
+			{
+				console.log('You have entered info.');
+			}
+		}
+
+		
+	</script>
+	<!-- END JAVASCRIPT -->
+</body>
+</html>
